@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scribey</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<style>
+		/* General styles */
+:root {
+  --color-bg: #F0ECE6;  /* ivory */
+  --color-accent: #CDBEA7;  /* sandstone */
+  --color-text: #554A39;  /* dark brown */
+  --color-heading: #3E332F;  /* deeper brown */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  color: var(--color-heading);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Header */
+header {
+  background-color: var(--color-bg);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  background-color: var(--color-bg);
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-heading);
+  color: var(--color-bg);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Vibey images */
+.library-image {
+  background-image: url('library.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.books-image {
+  background-image: url('books.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.journals-image {
+  background-image: url('journals.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+	</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="scribey.html">Scribey</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="subscribe.html">Subscribe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4">Welcome to Scribey</h1>
+      <p class="lead">We provide personalized journals and notebooks, tailored to your preferences and needs.</p>
+      <a class="btn btn-primary btn-lg" href="subscribe.html">Subscribe Now</a>
+    </div>
+  </div>
+
+  <!-- Benefits Section -->
+  <div class="container py-5">
+    <h2 class="text-center mb-5">Benefits of Scribey</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/749569/pexels-photo-749569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Personalized Selection</h5>
+            <p class="card-text">Our survey process helps us find the best journals for your taste and needs, so you get exactly what you want.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/6169131/pexels-photo-6169131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Convenient Delivery</h5>
+            <p class="card-text">No more searching for the perfect journal - we deliver it straight to your door every month.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/2954199/pexels-photo-2954199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Inspiration and Creativity</h5>
+        <p class="card-text">Our carefully selected journals and notebooks are designed to inspire and stimulate your creativity.</p>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+  <!-- Process Section -->
+  <div class="container py-5">
+    <h2 class="text-center mb-5">Our Process</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Our Process" class="img-fluid">
+      </div>
+      <div class="col-md-6 mb-4">
+        <p class="lead">At Scribey, we believe that every individual is unique, and so are their journaling needs. That's why we have developed a personalized selection process that helps us match you with the perfect journal or notebook.</p>
+        <p>When you subscribe to Scribey, you will fill out a survey that asks about your preferences in terms of journal size, cover design, paper quality, and more. Our algorithm then uses this information to select a journal that matches your preferences.</p>
+        <p>But our process doesn't end there. We also take into account your feedback and ratings on the journals you receive, so that we can continue to refine our selection process and provide you with even better journals in the future.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5>About Scribey</h5>
+          <p class="text-justify">Scribey is a personalized journals and notebooks subscription service that helps you find the perfect journal for your needs and preferences. Our selection process is based on your survey answers and feedback, so we can provide you with the best possible experience.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Contact Us</h5>
+          <address>
+            123 Main St<br>
+            Anytown, USA 12345<br>
+            <a href="tel:555-555-5555">555-555-5555</a><br>
+            <a href="mailto:info@scribey.com">info@scribey.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+           

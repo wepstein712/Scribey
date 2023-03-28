@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Scribey</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<style>
+		/* General styles */
+:root {
+  --color-bg: #F0ECE6;  /* ivory */
+  --color-accent: #CDBEA7;  /* sandstone */
+  --color-text: #554A39;  /* dark brown */
+  --color-heading: #3E332F;  /* deeper brown */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  color: var(--color-heading);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Header */
+header {
+  background-color: var(--color-bg);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  background-color: var(--color-bg);
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-heading);
+  color: var(--color-bg);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Vibey images */
+.library-image {
+  background-image: url('library.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.books-image {
+  background-image: url('books.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.journals-image {
+  background-image: url('journals.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+	</style>
+
+</head>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="scribey.html">Scribey</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="subscribe.html">Subscribe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br />
+<section class="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="https://images.pexels.com/photos/3205568/pexels-photo-3205568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Team in library" class="img-fluid">
+				</div>
+				<div class="col-md-6">
+					<h2>Our Mission</h2>
+					<p>Scribey is a small, family-like team that is passionate about providing unique and personalized notebooks to our customers. Our mission is to help our customers capture their ideas and creativity on paper in a way that reflects their unique personality and style. We believe that everyone has a story to tell and that the tools they use should enhance their ability to tell it.</p>
+
+					<h2>Our Team</h2>
+					<p>Our team consists of passionate and creative individuals who come from diverse backgrounds. We share a common love for writing and design, and are committed to providing the best possible experience for our customers. We work together closely, and are dedicated to continuously improving our products and services.</p>
+
+					<h2>Our Promise</h2>
+					<p>At Scribey, we promise to always put our customers first. We are committed to providing exceptional customer service, and to creating products that meet the unique needs of each and every customer. We believe that our products should not only be functional, but also beautiful and inspiring.</p>
+				</div>
+			</div>
+		</div>
+	</section>  
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5>About Scribey</h5>
+          <p class="text-justify">Scribey is a personalized journals and notebooks subscription service that helps you find the perfect journal for your needs and preferences. Our selection process is based on your survey answers and feedback, so we can provide you with the best possible experience.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Contact Us</h5>
+          <address>
+            123 Main St<br>
+            Anytown, USA 12345<br>
+            <a href="tel:555-555-5555">555-555-5555</a><br>
+            <a href="mailto:info@scribey.com">info@scribey.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

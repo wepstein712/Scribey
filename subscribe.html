@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<style>
+		/* General styles */
+:root {
+  --color-bg: #F0ECE6;  /* ivory */
+  --color-accent: #CDBEA7;  /* sandstone */
+  --color-text: #554A39;  /* dark brown */
+  --color-heading: #3E332F;  /* deeper brown */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  color: var(--color-heading);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Header */
+header {
+  background-color: var(--color-bg);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  background-color: var(--color-bg);
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-heading);
+  color: var(--color-bg);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Vibey images */
+.library-image {
+  background-image: url('library.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.books-image {
+  background-image: url('books.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.journals-image {
+  background-image: url('journals.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+	</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="scribey.html">Scribey</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="subscribe.html">Subscribe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+	<div class="container py-5">
+    <h2 class="text-center mb-5">Subscription Tiers</h2>
+    <p> We are so thrilled with your response! Unfortunately, we are completely sold out. Do not worry! We will be starting a Kickstarter soon to bring this idea into full production. Happy Scribing to you all! </p>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/6373409/pexels-photo-6373409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Apprentice Tier</h5>
+            <p class="card-text">Get one journal customized to a priliminary survey once a month.</p>
+            <p class="card-text"><strike>$10 a month </strike></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/5984613/pexels-photo-5984613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Journeyman Tier</h5>
+            <p class="card-text">Enhance your journal experience with a survery each month with how you feel about your journals to get the best fit for you!</p>
+            <p class="card-text"><strike>$30 a month </strike></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Grandmaster Tier</h5>
+            <p class="card-text">All the benefits of the Journeyman tier with one big change, this is a lifetime subscription! Everymonth for the rest of your life we will give you the best journal for you we have!</p>
+            <p class="card-text"><strike>One time purchase, $5000 </strike> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Notebook Service. All rights reserved.</p>
+		</div>
+	</footer>
+
+</body>
+</html>
